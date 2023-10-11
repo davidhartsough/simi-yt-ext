@@ -1,0 +1,45 @@
+#content #page-manager ytd-browse,
+#contentContainer
+  #guide-wrapper
+  #guide-content
+  #guide-inner-content
+  #guide-renderer
+  #footer,
+#contentContainer
+  #guide-wrapper
+  #guide-content
+  #guide-inner-content
+  #guide-renderer
+  #sections
+  ytd-guide-section-renderer.style-scope.ytd-guide-renderer,
+a#endpoint.yt-simple-endpoint.style-scope.ytd-guide-entry-renderer[title="Shorts"],
+#content
+  #page-manager
+  ytd-watch-flexy.ytd-page-manager
+  #columns
+  #secondary.ytd-watch-flexy,
+ytd-merch-shelf-renderer,
+ytd-comments#comments,
+ytd-player#ytd-player
+  #container
+  #movie_player
+  .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles {
+  display: none;
+}
+
+#contentContainer
+  #guide-wrapper
+  #guide-content
+  #guide-inner-content
+  #guide-renderer
+  #sections
+  ytd-guide-section-renderer.style-scope.ytd-guide-renderer:first-child,
+#contentContainer
+  #guide-wrapper
+  #guide-content
+  #guide-inner-content
+  #guide-renderer
+  #sections
+  ytd-guide-section-renderer.style-scope.ytd-guide-renderer:last-child {
+  display: block;
+}
