@@ -12,6 +12,7 @@
   "content_scripts": [
     {
       "css": ["simi-yt.css"],
+      "js": ["simi-yt.js"],
       "matches": ["https://www.youtube.com/*"]
     }
   ]

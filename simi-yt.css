@@ -1,4 +1,9 @@
-#content #page-manager ytd-browse,
+#content #page-manager ytd-browse.ytd-page-manager[page-subtype="home"],
+#masthead-ad.ytd-rich-grid-renderer
+  ytd-ad-slot-renderer.ytd-rich-grid-renderer
+  #fulfilled-layout.ytd-ad-slot-renderer
+  ytd-page-top-ad-layout-renderer.ytd-ad-slot-renderer
+  #rendering-content.ytd-page-top-ad-layout-renderer,
 #contentContainer
   #guide-wrapper
   #guide-content
@@ -13,6 +18,7 @@
   #sections
   ytd-guide-section-renderer.style-scope.ytd-guide-renderer,
 a#endpoint.yt-simple-endpoint.style-scope.ytd-guide-entry-renderer[title="Shorts"],
+a#endpoint.yt-simple-endpoint.style-scope.ytd-mini-guide-entry-renderer[title="Shorts"],
 #content
   #page-manager
   ytd-watch-flexy.ytd-page-manager
@@ -23,7 +29,19 @@ ytd-comments#comments,
 ytd-player#ytd-player
   #container
   #movie_player
-  .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles {
+  .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles,
+#container
+  > #movie_player.ad-created.ad-showing.ad-interrupting
+  > .html5-video-container
+  > video.video-stream.html5-main-video,
+#container
+  > #movie_player.ad-created.ad-showing.ad-interrupting
+  .ytp-chrome-top,
+#container
+  > #movie_player.ad-created.ad-showing.ad-interrupting
+  .ytp-ad-player-overlay-flyout-cta,
+#related,
+#main.ytd-merch-shelf-renderer {
   display: none;
 }
 
